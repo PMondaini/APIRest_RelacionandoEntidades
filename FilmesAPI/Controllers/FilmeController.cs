@@ -26,11 +26,11 @@ public class FilmeController : ControllerBase
         FilmeViewModel filme = _mapper.Map<FilmeViewModel>(filmeDto);
         _context.Filme.Add(filme);
         _context.SaveChanges();
-        return CreatedAtAction(nameof(RecuperaFilme), new {id = filme.Id}, filmeDto);
+        return CreatedAtAction(nameof(RecuperaFilme), new { id = filme.Id }, filmeDto);
     }
 
     [HttpGet]
-    public IEnumerable<FilmeViewModel> RecuperaFilme([FromQuery] int skip = 0, 
+    public IEnumerable<FilmeViewModel> RecuperaFilme([FromQuery] int skip = 0,
         [FromQuery] int take = 50)
     {
         return _context.Filme.Skip(skip).Take(take);
@@ -40,10 +40,23 @@ public class FilmeController : ControllerBase
     public IActionResult RecuperaFilme(int id)
     {
         var filme = _context.Filme.FirstOrDefault(filme => filme.Id == id);
-        if (filme == null)  return NotFound();
+        if (filme == null) return NotFound();
 
         return Ok(filme);
 
+    }
+
+    //Alterando algum filme salvo
+    [HttpPut("{id}")]
+    public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
+    {
+        var filme = _context.Filme.FirstOrDefault(filme => filme.Id == id);
+        if (filme == null) return NotFound();
+
+        _mapper.Map(filmeDto, filme);
+        _context.SaveChanges();
+
+        return NoContent();
     }
 }
  
