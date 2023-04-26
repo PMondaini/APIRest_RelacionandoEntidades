@@ -21,7 +21,14 @@ public class FilmeController : ControllerBase
         _mapper = mapper;
     }
 
+    ///<summary>
+    ///Adiciona um filme ao banco de dados
+    ///</summary>
+    ///<param name="filmeDto"> Objeto com os campos para a criação do filme </param>
+    ///<returns>IActionResult</returns>
+    ///<response code="281" > caso inserção seja feita com sucesso </response>
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
     public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
     {
         FilmeViewModel filme = _mapper.Map<FilmeViewModel>(filmeDto);
@@ -30,6 +37,12 @@ public class FilmeController : ControllerBase
         return CreatedAtAction(nameof(RecuperaFilme), new { id = filme.Id }, filmeDto);
     }
 
+    ///<summary>
+    ///Busca todos os filmes no banco de dados
+    ///</summary>
+    ///<param name="filmeDto"> Objeto com os campos para a criação do filme </param>
+    ///<returns>IActionResult</returns>
+    ///<response code="281" > caso inserção seja feita com sucesso </response>
     [HttpGet]
     public IEnumerable<ReadFilmeDto> RecuperaFilme([FromQuery] int skip = 0,
         [FromQuery] int take = 50)

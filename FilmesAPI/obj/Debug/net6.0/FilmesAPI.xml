@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesAPI</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesAPI.Controllers.FilmeController.AdicionaFilme(FilmesAPI.Data.DTO.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmeDto"> Objeto com os campos para a criação do filme </param>
+            <returns>IActionResult</returns>
+            <response code="281" > caso inserção seja feita com sucesso </response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.RecuperaFilme(System.Int32,System.Int32)">
+            <summary>
+            Busca todos os filmes no banco de dados
+            </summary>
+            <param name="filmeDto"> Objeto com os campos para a criação do filme </param>
+            <returns>IActionResult</returns>
+            <response code="281" > caso inserção seja feita com sucesso </response>
+        </member>
+        <member name="T:FilmesAPI.Migrations.ContextoTabelaFilmes">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.ContextoTabelaFilmes.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.ContextoTabelaFilmes.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.ContextoTabelaFilmes.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
