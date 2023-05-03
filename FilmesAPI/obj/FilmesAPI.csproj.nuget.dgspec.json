@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {}
+    "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\2 - Relacionando Entidades\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {
+    "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\2 - Relacionando Entidades\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\2 - Relacionando Entidades\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
         "projectName": "FilmesAPI",
-        "projectPath": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
+        "projectPath": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\2 - Relacionando Entidades\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
         "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\FilmesAPI\\FilmesAPI\\obj\\",
+        "outputPath": "C:\\Users\\Patrick\\Desktop\\Estudo\\Alura\\C#\\API\\2 - Relacionando Entidades\\FilmesAPI\\FilmesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
