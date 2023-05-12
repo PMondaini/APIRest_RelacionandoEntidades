@@ -9,5 +9,7 @@ namespace FilmesAPI.Models
         public int Id { get; set; }
         public string Logradouro { get; set; }
         public int Numero { get; set; }
+        //2 - Insere a referência do cinema no Endereco
+        public virtual CinemaViewModel Cinema { get; set; }
     }
 }

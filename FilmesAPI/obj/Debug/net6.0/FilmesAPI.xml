@@ -32,5 +32,17 @@
         <member name="M:FilmesAPI.Migrations.ContextoTabelaFilmes.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:FilmesAPI.Migrations.CinemaeEdereco">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEdereco.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEdereco.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEdereco.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
