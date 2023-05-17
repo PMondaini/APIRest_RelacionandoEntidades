@@ -9,7 +9,11 @@ namespace FilmesAPI.Profiles
         public CinemaProfile()
         {
             CreateMap<CreateCinemaDto, CinemaViewModel>();
-            CreateMap<CinemaViewModel, ReadCinemaDto>();
+            CreateMap<CinemaViewModel, ReadCinemaDto>()
+                //Este filtro indica que o campo ReadEnderecoDto presente em ReadCinemaDto será 
+                //mapeado o campo Endereco de CinemaViewModel
+                .ForMember(cinemaDto => cinemaDto.Endereco,
+                opt => opt.MapFrom(cinema => cinema.Endereco));
             CreateMap<CinemaViewModel, UpdateCinemaDto>();
         }
     }

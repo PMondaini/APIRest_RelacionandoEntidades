@@ -112,3 +112,5 @@ C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAP
 C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAPI\FilmesAPI\obj\Debug\net6.0\FilmesAPI.pdb
 C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAPI\FilmesAPI\obj\Debug\net6.0\FilmesAPI.genruntimeconfig.cache
 C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAPI\FilmesAPI\obj\Debug\net6.0\ref\FilmesAPI.dll
+C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAPI\FilmesAPI\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Patrick\Desktop\Estudo\Alura\C#\API\2 - Relacionando Entidades\FilmesAPI\FilmesAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
