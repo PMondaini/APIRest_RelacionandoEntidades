@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FilmesAPI.Data.DTO;
+using System.ComponentModel.DataAnnotations;
 
 namespace FilmesAPI.Models;
 
@@ -25,4 +26,5 @@ public class FilmeViewModel
     public int AnoLancamento { get; set; }
 
     public virtual ICollection<SessaoViewModel> Sessoes { get; set; }
+
 }

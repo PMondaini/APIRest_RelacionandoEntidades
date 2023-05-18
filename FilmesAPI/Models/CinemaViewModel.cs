@@ -15,5 +15,6 @@ namespace FilmesAPI.Models
         //1 - Indica que possui a relação com 1 endereço
         // - A propriedade virtual também serve para recuperar uma instância do objeto
         public virtual EnderecoViewModel Endereco { get; set; }
+        public virtual ICollection<SessaoViewModel> Sessoes { get; set; }
     }
 }

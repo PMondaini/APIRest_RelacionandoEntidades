@@ -13,7 +13,9 @@ namespace FilmesAPI.Profiles
                 //Este filtro indica que o campo ReadEnderecoDto presente em ReadCinemaDto será 
                 //mapeado o campo Endereco de CinemaViewModel
                 .ForMember(cinemaDto => cinemaDto.Endereco,
-                opt => opt.MapFrom(cinema => cinema.Endereco));
+                opt => opt.MapFrom(cinema => cinema.Endereco)).
+                ForMember(cinemaDto => cinemaDto.Sessoes,
+                opt => opt.MapFrom(cinema => cinema.Sessoes));
             CreateMap<CinemaViewModel, UpdateCinemaDto>();
         }
     }
