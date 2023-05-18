@@ -23,4 +23,6 @@ public class FilmeViewModel
     public string Diretor { get; set; }
 
     public int AnoLancamento { get; set; }
+
+    public virtual ICollection<SessaoViewModel> Sessoes { get; set; }
 }

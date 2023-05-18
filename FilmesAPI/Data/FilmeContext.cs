@@ -14,4 +14,5 @@ public class FilmeContext : DbContext
     public DbSet<FilmeViewModel> Filme { get; set; }
     public DbSet<CinemaViewModel> Cinemas { get; set; }
     public DbSet<EnderecoViewModel> Enderecos { get; set; }
+    public DbSet<SessaoViewModel> Sessoes { get; set; }
 }
