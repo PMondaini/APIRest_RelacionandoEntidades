@@ -29,6 +29,14 @@ public class FilmeContext : DbContext
             .HasOne(sessao => sessao.Filme)
             .WithMany(filme => filme.Sessoes)
             .HasForeignKey(sessao => sessao.FilmeId);
+
+        //Define o tipo de deleção definido para a entidade
+        //Por padrão, o DELETE do Entity é em cascata;
+        //Neste caso, a ideia é alterar a forma de deleção do EnderecoViewModel 
+        builder.Entity<EnderecoViewModel>()
+            .HasOne(endereco => endereco.Cinema)
+            .WithOne(cinema => cinema.Endereco)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 
     public DbSet<FilmeViewModel> Filme { get; set; }
